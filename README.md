@@ -80,7 +80,22 @@ export default ({ app, $vuetify }) => {
 
 ## Using the plugin
 
-First, you have to enable the plugin from `
-## Using the plugin `nuxt.config.js
-## Using the plugin`
-## Using the plugin
+First, you have to enable the plugin in the `nuxt.config.js` file:
+
+```js
+// ~/nuxt.config.js
+
+// ...
+/*
+ ** Plugins to load before mounting the App
+ ** https://nuxtjs.org/guide/plugins
+ */
+plugins: ['~/plugins/i18n.js'],
+// ...
+```
+
+Then, from any `.vue` file, you can translate any key defined in the localization files:
+
+```vue
+<h5>{{ $t('file') }}</h5>
+```
