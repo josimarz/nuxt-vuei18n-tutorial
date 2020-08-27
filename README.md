@@ -77,6 +77,7 @@ export default ({ app, $vuetify }) => {
   // change the default method used by Vuetify to apply translation to their built-in components
   $vuetify.lang.t = (key, ...params) => app.i18n.t(key, params)
 }
+```
 
 ## Using the plugin
 
